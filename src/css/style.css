@@ -23,12 +23,22 @@ body {
 	font-size: 15px；
 }
 
-.toptab {
+.tab {
 	background-color: #1E1E1E;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.tab0 {
+	color: #EEE1C0;
+	font-family: "Lilita One", sans-serif;
+	font-size: 24px;
+	background-color: #1E1E1E;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
 }
 
 h1 {
@@ -45,10 +55,28 @@ h1 {
 	margin: 0 auto;
 }
 
-.introduction {
+.contenttext {
 	font-family: "Judson", sans-serif;
 	font-size: 15px;
 	line-height: 20px;
+}
+
+.contenttab {
+	background-color: #FFF4D8;
+	display: flex;
+	padding: 20px 20px;
+	flex-direction: column;
+	gap: 15px;
+	border: 8px solid #B5AB92;
+	border-radius: 20px;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.subtitle {
+	font-family: "Lilita One", sans-serif;
+	font-size: 20px;
+	text-align: center;
 }
 
 .link {
@@ -56,15 +84,77 @@ h1 {
 	color: #A99B4E;
 }
 
-.intropart {
-	background-color: #FFF4D8;
+.gapbetween {
+	padding-top: 25px;
+}
+
+.gap {
 	display: flex;
-	padding: 19px 20px;
 	flex-direction: column;
-	align-items: center;
-	gap: 25px;
-	border: 8px solid #B5AB92;
-	max-width: 70%;
-	height: auto;
-	margin: 0 auto;
+	gap: 20px;
+}
+
+.gap0 {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-top: 20px;
+}
+
+.wider-margin {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+	.nora-cooks {
+		font-size: 35px;
+	}
+
+	.recipe {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 55px;
+	}
+
+	.tab0 {
+		font-size: 35px;
+	}
+
+	.subtitle {
+		font-size: 25px;
+	}
+
+	.ipadintro {
+		display: flex;
+		align-items: center;
+	}
+
+	.ipadintro .img1 {
+		width: 40%;
+		margin-right: 20px;
+		margin-left: 50px;
+		margin-top: 20px;
+		flex-shrink: 0;
+	}
+
+	.ipadintro .firstsection {
+		width: 60%;
+	}
+
+	.ipadintro .firstsection h1,
+	.ipadintro .firstsection p {
+		text-align: left;
+	}
+
+	.contenttext {
+		font-size: 18px;
+		line-height: 25px;
+	}
 }
