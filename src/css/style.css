@@ -49,10 +49,43 @@ h1 {
 }
 
 .img1 {
-	max-width: 77.5%;
+	max-width: 70%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
+}
+
+.img-title {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.img-ingredient {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.img-intro {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.img2 {
+	max-width: 70%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .contenttext {
@@ -145,14 +178,15 @@ h1 {
 
 	.subtitle {
 		font-size: 25px;
+		grid-column: span 4;
 	}
 
-	.ipadintro {
+	.intro {
 		display: flex;
 		align-items: center;
 	}
 
-	.ipadintro .img1 {
+	.intro .img-title {
 		width: 40%;
 		margin-right: 20px;
 		margin-left: 50px;
@@ -168,6 +202,7 @@ h1 {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding-right: 30px;
 	}
 
 	.firstsection .contenttab {
@@ -187,10 +222,10 @@ h1 {
 
 	.threecolumns {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 3fr 1fr;
 		gap: 10px;
 		align-items: center;
-		padding-right: 50px;
+		padding-right: 40px;
 	}
 
 	.threecolumns .img1 {
@@ -199,9 +234,113 @@ h1 {
 		height: auto;
 	}
 
-	.contenttab-ingredients .contenttext {
+	.contenttext {
 		font-size: 15px;
 		line-height: 20px;
+	}
+
+	.recipe-step {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.img1 {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.grid-tips {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		align-items: center;
+	}
+
+	.tips-first-column {
+		line-height: 20px;
+	}
+
+	.questions-grid {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		padding: 0 40px;
+		align-items: center;
+	}
+
+	.img2 {
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.img-intro {
+		max-width: 100%;
+	}
+
+	.img-ingredient {
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+	.nora-cooks {
+		font-size: 45px;
+	}
+
+	.recipe {
+		font-size: 30px;
+	}
+
+	h1 {
+		font-size: 65px;
+	}
+
+	.tab0 {
+		font-size: 45px;
+	}
+
+	.contenttext {
+		font-size: 20px;
+		line-height: 30px;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+
+	.title {
+		align-items: left;
+		margin-left: 30px;
+	}
+
+	h1 {
+		text-align: left;
+	}
+
+	.intro-column {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.threecolumns {
+		padding-right: 100px;
+	}
+
+	.subtitle {
+		font-size: 30px;
+	}
+
+	.img2 {
+		margin: 0;
+		max-width: 77.5%;
+		margin-bottom: 30px;
+	}
+
+	.img-title {
+		max-width: 30%;
+	}
+
+	.intro .contenttab {
+		max-width: 85%;
+		font-size: 25px;
+		line-height: 40px;
 	}
 
 }
